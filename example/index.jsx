@@ -1,31 +1,11 @@
-#iRobo react-modal
+import ReactDOM from 'react-dom';
+import React, {
+  Component,
+} from 'react';
+import IRoboModal from './../lib/iRoboModal.jsx';
 
-아이로보의 간단한 모달 컴퍼넌트 입니다.
-Simple modal component for React.JS
-
-### 설치 Installation
-
-```
-npm install --save react-modal
-```
-
-### 사용방법 Usage
-
-```
-<IRoboModal
-  isOpen={boolean}
-  isWidth={widthValue}
-  isHeight={heightValue}
-  bgColor={colorValue}
->
-{content}
-</IRoboModal>
-```
-
-### 예시 Example
-
-```
-constructor(props) {
+class IRoboModalTest extends Component {
+  constructor(props) {
     super(props);
     this.state = {
       isModalOpen: false,
@@ -60,8 +40,13 @@ constructor(props) {
           >
             팝업 닫기
           </span>
-        </IRoboModal>
+      	</IRoboModal>
       </div>
     );
   }
-```
+}
+
+ReactDOM.render(
+  <IRoboModalTest />,
+  document.getElementById('app')
+);
