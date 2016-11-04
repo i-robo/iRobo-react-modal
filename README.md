@@ -6,7 +6,7 @@ Simple modal component for React.JS
 ### 설치 Installation
 
 ```
-npm install --save react-modal
+npm install -S iRobo-react-modal
 ```
 
 ### 사용방법 Usage
@@ -21,6 +21,13 @@ npm install --save react-modal
 {content}
 </IRoboModal>
 ```
+
+#### Props
+
+ - isOpen: (boolean) 모달의 오픈여부
+ - isWidth: (Number) 모달 넓이
+ - isHeight: (Number) 모달 높이
+ - bgColor: (HEXcode) 모달 전체 배경 색
 
 ### 예시 Example
 
@@ -65,3 +72,7 @@ constructor(props) {
     );
   }
 ```
+
+### License
+
+MIT
