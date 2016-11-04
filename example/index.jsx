@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import React, {
   Component,
 } from 'react';
-import IRoboModal from './../lib/iRoboModal.jsx';
+import IRoboModal from './../src/iRoboModal.jsx';
 
 class IRoboModalTest extends Component {
   constructor(props) {

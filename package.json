@@ -22,11 +22,13 @@
     "iRobo"
   ],
   "scripts": {
-    "build": "./node_modules/.bin/babel ./lib/iRoboModal.jsx -o ./lib/iRoboModal.js",
+    "clean": "rm -rf lib",
+    "build": "npm run clean && $(npm bin)/babel src -d lib",
+    "prepublish": "npm run build",
     "example": "$(npm bin)/webpack-dev-server --config example/webpack.config.js",
     "buildExample": "webpack --config webpack.example.config"
   },
-  "main": "./lib/index",
+  "main": "./lib/iRoboModal.js",
   "devDependencies": {
     "babel-core": "^6.3.17",
     "babel-jest": "^10.0.1",
